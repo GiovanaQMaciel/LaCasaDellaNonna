@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS_Style/reserva.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>La casa della nonna</title>
+</head>
+
+<body>
+    <section class="inicio">
+        <header>
+            <a href="menu.html">
+                <img class="icone" src="img/icone.png" alt="Ícone">
+            </a>
+            <h1>La Casa della Nonna</h1>
+        </header>
+        <div class="seccao">
+            <ul>
+                <dl><a class="c" href="inicial.html">Cardápio</a></dl>
+                <dl><a class="c" href="reserva.html">Reservas</a></dl>
+                <dl><a class="c" href="contato.html">Contato</a></dl>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <h3>Realize a sua reserva</h3>
+        <section class="total">
+            <form id="myform" action=" " method="post">
+                <!-- <fieldset class="formulario"> -->
+                <h2>Formulário de Reservas</h2>
+                <br>
+                <label  for="name">Nome Completo &nbsp;</label><br>
+                <input class="name" type="text" id="name" name="name" row="1" cols="60" placeholder="Digite seu nome completo" required> 
+                <br>   <br>
+
+                <div class="time">
+                    <div><label for="data">Data &nbsp;</label><br>
+                        <input type="date" id="data" name="data" required ></div>
+                    
+                <br> <br>
+
+                <div><label for="time">Horário &nbsp;</label><br>
+                    <input type="time" id="time" name="time" required ></div>
+                </div>
+
+                <br> <br>
+                
+                <label for="pessoas">Número de Pessoas &nbsp;</label><br>
+                <input type="number" id="pessoas" name="pessoas" placeholder="Digite o nº de pessoas"required>
+                <br> <br>
+
+                <label for="telefone">Telefone &nbsp;</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="( ) _____-____    "required>
+                <br> <br>
+
+    
+               
+    
+                <label for="mensagem">&ensp;&nbsp;Preferências</label><br>
+                <textarea  &nbsp; id="mensagem"name="mensagem"  rows="4" cols="50" placeholder="Digite suas preferências"required></textarea>
+                <br>
+                <br>
+                <br>
+                <a class="en" href="sucesso.html">Enviar</a>
+                <br>
+            </form>
+            <img  class="fot" src="img/form.webp">
+        </section>
+    </main>
+</body>
+</html>

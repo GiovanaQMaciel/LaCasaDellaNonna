@@ -4,6 +4,8 @@ body{
     padding-top: 0.5px;
 }
 
+
+
 header{
     background-color: #4da4da;
     display: flex;
@@ -62,43 +64,84 @@ ul{
     z-index: 1;
 }
 
-.prin{
-    position:relative;
+main{
+    margin-top: 12%;
+}
+
+.item{
+    background-color: #4f98f6;
+    margin: 2%;
     display: flex;
+    border-radius: 8px;
+    border: 7px double #112a58;
+    transition: transform 0.3s ease;
 }
 
-.car{
-    width: 2500px;
-    height:630px;
-    overflow: hidden;
-    position: relative;
-    margin-top:3%;
-    border: 10px double #00bdd4;   
+.item:hover h5{
+    transform: scale(1.2);
 }
 
-.car img{
+.foto{
+    background-color: #112a58;
+    margin-top: 0px;
+}
+
+.pic{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    transition: opacity 1s ease-in-out;
-    /* opacity: 0; */
 }
 
-.car img.active{
-    opacity: 1;
+.texto{
+    margin: 20px;
+    
 }
 
-.car img:not(.active){
-    opacity: 0;
+h2{
+    margin: 0px;
+    font-family:serif;
+    color: #4da4da;
+    font-size: 40px;
+    height: 15%;
+    text-align: center;
+    background-color: #112a58;
+    border-radius: 0% 0% 90% 90%;
 }
 
-.text{
-    margin-top: 15%;
+h4{
+    color: #182393;
+    font-family:'Gill Sans MT';
+    font-size: 18px;
     text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
+p{
+    color: #182393;
+    font-family:'Gill Sans MT';
+}
 
+h5 {
+    color: #4da4da;
+    background-color: #112a58;
+    width: 150px;
+    height: 70px;
+    float: right;
+    margin-right: 30px;
+    margin-top: -40px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6%;
+}
 
+.st{
+    width: 1600px;
+    height: 400px;
+    margin-bottom: 0px;
+    border: 7px double #112a58;
+}
+
+.tx{
+    width: 1600px;
+}
